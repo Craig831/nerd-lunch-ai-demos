@@ -398,3 +398,14 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+# ignore appSettings.json in any subfolder
+appSettings.json
+
+# ignore .env files in any subfolder
+.env
+
+# allow example files to be tracked
+!appSettings.example.json
+!env.example
