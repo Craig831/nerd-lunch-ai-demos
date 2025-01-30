@@ -18,3 +18,12 @@ Folder contains a .Net 9 solution that contains projects that provide a Chatbot 
 - ```SharedConfig```: contains an OpenAiServiceConfig class that both solutions leverage for loading application settings from appSettings.json
 - ```WithHttpClient```: project that communicates with deployed Azure Open AI resources using WithHttpClient
 - ```WithSDK21```: project that communicates with deployed Azure Open AI resources using the Azure.AI.OpenAI library
+
+[Azure OpenAI REST API Reference](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)
+
+### Some examples:
+- Completions:  POST https://{endpoint}/openai/deployments/{deployment-id}/completions?api-version=2024-10-21
+- Embeddings: POST https://{endpoint}/openai/deployments/{deployment-id}/embeddings?api-version=2024-10-21
+- Chat completions: POST https://{endpoint}/openai/deployments/{deployment-id}/chat/completions?api-version=2024-10-21
+- Transcriptions: POST https://{endpoint}/openai/deployments/{deployment-id}/audio/transcriptions?api-version=2024-10-21
+- Image generation: POST https://{endpoint}/openai/deployments/{deployment-id}/images/generations?api-version=2024-10-21
