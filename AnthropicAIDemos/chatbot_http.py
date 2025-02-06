@@ -11,7 +11,7 @@ MODEL=os.getenv("MODEL")
 API_KEY=os.getenv("ANTHROPIC_API_KEY")
 API_ENDPOINT="https://api.anthropic.com/v1/messages"
 MAX_TOKENS=int(os.getenv("MAX_TOKENS"))
-SYSTEM_PROMPT="You are a helpful AI assistant that responds to every question like an 80's Valley Girl."
+SYSTEM_PROMPT="You are a helpful AI assistant that responds to every question like a politician."
 
 data = {
     "model": MODEL,
@@ -56,6 +56,6 @@ while True:
 
         conversation_history.append(create_message("assistant", assistant_response))
     else:
-        print (Colors.error("\nError: ", response.status_code, response.text))
+        print (Colors.error(f"\nError code: {response.status_code}, text: {response.text} ", ))
 
 print("end")

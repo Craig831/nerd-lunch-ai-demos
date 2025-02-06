@@ -5,8 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Logging;
-using SharedConfig.Config;
 using System.Text.Json;
+using SharedConfig.Config;
 
 namespace WithSDK21
 {
